@@ -1,0 +1,43 @@
+name: flutter_app
+description: "A production-quality mobile/desktop app client for the AI Meeting Summarizer."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Design & Icons ──────────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+
+  # ── Networking (Client for FastAPI Backend) ─────────────────────
+  dio: ^5.4.3
+
+  # ── State Management ────────────────────────────────────────────
+  provider: ^6.1.2
+
+  # ── Hardware & File Picking ─────────────────────────────────────
+  file_picker: ^8.0.3
+
+  # ── UI Utilities ────────────────────────────────────────────────
+  flutter_markdown: ^0.7.2+1
+  intl: ^0.19.0
+
+  # ── PDF Export ───────────────────────────────────────────────────
+  pdf: ^3.11.1
+  printing: ^5.13.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # (Optional) Add assets folder if you want to load mock audio/images in the future
+    # - assets/

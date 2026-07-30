@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────
+# AI Meeting Summarizer — FastAPI Backend Dependencies
+# ─────────────────────────────────────────────────────────────────
+
+# ── Web Framework ─────────────────────────────────────────────────
+fastapi==0.115.5           # Core FastAPI framework
+uvicorn[standard]==0.32.0  # ASGI server to run FastAPI in production
+
+# ── Validation & Settings ─────────────────────────────────────────
+pydantic==2.9.2            # Data validation and serialization
+pydantic-settings==2.6.1   # Load .env into typed Settings class
+
+# ── Environment Variables ─────────────────────────────────────────
+python-dotenv==1.0.1       # Load .env file at startup
+
+# ── File Upload Support ───────────────────────────────────────────
+python-multipart==0.0.12   # Required by FastAPI to handle multipart/form-data uploads
+
+# ─────────────────────────────────────────────────────────────────
+# AI Pipeline Dependencies
+# These are already installed in the root .venv.
+# Listed here for completeness and future Docker/deployment use.
+# ─────────────────────────────────────────────────────────────────
+langchain-mistralai         # Mistral LLM integration
+langchain-community         # HuggingFace embeddings
+langchain-chroma            # Chroma vector store
+langchain-text-splitters    # Recursive text splitter
+faster-whisper              # Faster-Whisper transcription engine
+pydub                       # Audio loading and chunking
+yt-dlp                      # YouTube audio download

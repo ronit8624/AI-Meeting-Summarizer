@@ -1,35 +1,56 @@
-# Environment variables — API keys kabhi push mat karo
-.env
-
-# Python cache
+# Python
 __pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual environments
+*.pyc
+*.egg-info/
 .venv/
 venv/
-env/
+backend/venv/
+.env
 
-# Downloaded audio files
+# Backend generated data (user-specific, heavy)
+backend/uploads/
+backend/outputs/
+backend/downloads/
+
+# Project sample audio/video downloads (too large for git)
 downloads/
 
-# ChromaDB vector database
-vector_db/
+# Flutter
+flutter_app/build/
+flutter_app/.dart_tool/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+flutter_app/.packages
 
-# Python packaging artifacts
-*.egg-info/
-dist/
-build/
+# IDE
+.vscode/
+.idea/
 
-# Mac system files
+# OS
 .DS_Store
 
-# VS Code settings
-.vscode/
+# Legacy archive
+_legacy_unused/
 
-# Jupyter notebooks checkpoints
-.ipynb_checkpoints/
+# Environment
+.env
+**/.env
 
-# Logs
-*.log
+# Python
+.venv/
+venv/
+**/venv/
+__pycache__/
+*.pyc
+
+# Outputs
+backend/uploads/
+backend/outputs/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Flutter/Android
+**/build/
+**/local.properties
